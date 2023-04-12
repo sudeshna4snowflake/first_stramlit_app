@@ -33,7 +33,7 @@ try:
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
-    #back_from_function=get_fruity_vice_data(fruit_choice)
+    back_from_function=get_fruity_vice_data(fruit_choice)
     #import requests
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     #streamlit.text(fruityvice_response.json())
